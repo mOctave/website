@@ -1,0 +1,83 @@
+html {
+	background-color: black;
+	background-image: url("bgimg.svg");
+	background-size: 64px;
+	background-repeat: repeat;
+	font-family: Verdana, Arial, sans-serif;
+	color: #eee;
+	margin: 0px;
+}
+
+body {
+	margin: 0px;
+}
+
+h1 {
+	color: #da3;
+	text-align: center;
+	font-weight: 400;
+	font-family: "Optima", "Perpetua", Verdana, Arial, sans-serif;
+}
+
+h2 {
+	color: #0ab7cb;
+	font-weight: 400;
+}
+
+p {
+	color: #bbb;
+}
+
+.maincontainer {
+	width: 70%;
+	margin: auto;
+	background-color: #222;
+	border-left: 3px solid #444;
+	border-right: 3px solid #444;
+	padding: 10px;
+	min-height: calc(100vh - 20px);
+}
+
+
+.projectcontainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project {
+	flex: 1;
+	min-width: 300px;
+	border: 3px solid #555;
+	background-color: #222;
+	border-radius: 10px;
+	padding: 10px;
+	text-decoration: none;
+	margin: 10px;
+}
+
+.project:hover {
+	background-color: #111;
+	border-color: #444;
+}
+
+.projectheader {
+	height: 40px;
+	margin-top: -10px;
+}
+
+.project img {
+	height: 40px;
+	aspect-ratio: 100%;
+	float: left;
+	padding-right: 10px;
+	vertical-align: center;
+}
+
+/*Mobile Support */
+@media screen and (max-width: 599px) {
+	.maincontainer {
+		width: 90%;
+	}
+}
