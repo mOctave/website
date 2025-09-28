@@ -28,6 +28,10 @@ p {
 	color: #bbb;
 }
 
+a {
+	color: #0ab7cb;
+}
+
 .maincontainer {
 	width: 70%;
 	margin: auto;
