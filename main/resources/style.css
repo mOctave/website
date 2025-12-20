@@ -18,8 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 html {
 	background-color: black;
-	background-image: url("bgimg.svg");
-	background-size: 64px;
+	background-size: 100vh;
 	background-repeat: repeat;
 	font-family: Verdana, Arial, sans-serif;
 	color: #eee;
@@ -28,6 +27,8 @@ html {
 
 body {
 	margin: 0px;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0,0.8)),
+	url("img/bg-tex.jpg");
 }
 
 h1 {
@@ -60,14 +61,33 @@ a:hover {
 	color: #08b;
 }
 
-.maincontainer {
-	width: 70%;
+.displaycontainer {
+	width: 80%;
 	margin: auto;
+	display: flex;
+	min-height: calc(100vh - 20px);
+}
+
+.maincontainer {
 	background-color: #222;
 	border-left: 3px solid #444;
 	border-right: 3px solid #444;
 	padding: 10px;
-	min-height: calc(100vh - 20px);
+	flex-grow: 1;
+}
+
+.border-a {
+	background-color: #da3;
+}
+
+.border-b {
+	background-color: #08b;
+}
+
+.border-a,.border-b {
+	padding: 3px;
+	align-self: stretch;
+	flex-grow: 0;
 }
 
 
@@ -181,9 +201,17 @@ span.navbar-item {
 	.maincontainer {
 		width: 90%;
 	}
-
+	
 	.navbar {
 		width: calc(90% + 10px);
 		left: calc(5% - 13px);
 	}
 }
+
+/*
+PALETTE
+Borders:        #555
+Background:     #444
+Highlight 1:    #8c4
+
+*/
