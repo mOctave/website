@@ -1,0 +1,73 @@
+<!--
+moctave.net - My personal website.
+Copyright (C) 2025 mOctave
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>270-50 | mOctave</title>
+	<meta name="title" content="270-50 | mOctave"/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="I made a game during the 2024 US election season... about the 2024 US election season! Learn about it here."/>
+	<meta name="keywords" content="moctave elections"/>
+	<meta author="mOctave"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="../resources/style.css"/>
+	<link rel="icon" href="../resources/icon.png"/>
+</head>
+<body>
+	<div class="displaycontainer">
+		<div class="border-a"></div>
+		<div class="border-b"></div>
+		<div class="maincontainer">
+			<div class="navbar">
+				<a class="navbar-item" href="../index.html">mOctave</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../projects.html">Projects</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../about.html">About</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../blog.html">Blog</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="https://github.com/mOctave">GitHub</a>
+			</div>
+			<div class="navbar-spacer"></div>
+			<h1>270-50</h1>
+			<p>Sometime in September or October 2024, I got bored. So naturally, I did what I usually do when I get bored and threw together an amusing little game to <s>torture my friends</s> amuse myself with.</p>
+			<p>The original game of the version was played on paper, with a dedicated gamemaster (me) painstakingly adjusting a 270toWin map, and took far longer than any normal person would want.</p>
+			<p>Thus, I was very surprised when my chosen victims didn't hate what I was doing to them, but actually seemed to <em>like</em> it.</p>
+			<p>In fact, they liked the game enough that I was quickly running out of scrap paper for them to write their orders on, and so I turned instead to Technology™ to handle the orders for me.</p>
+			<p>The end result? A fully-functioning CLI game with multiple scenarios, several different bots of varying difficulties, and some fancy work with ANSI escape codes.</p>
+			<p>At this point, the game is probably as close to completion as it will ever be. Some of the "hard" bots are much easier than they were intended to be (apparently evolutionarily training a neural network to play a game that involves lots of random chance on just a laptop CPU is kinda hard), but at least none of them should crash the game or corrupt your files... right?</p>
+			<p>Anyways, if you want to download the game, here it is.</p>
+			<p><a href="../resources/files/270-50-release.zip">I pRoMiSe ThIs IsN't MaLwArE aNd YoU cAn TrUsT mE sInCe I'm A pRoGrAmMeR</a></p>
+			<p>Just download the zip archive, expand it, and run the following commands in your terminal:</p>
+			<pre>
+cd [path to directory you just made]
+java -jar 270-50.jar</pre>
+			<p>And then you, too, can enjoy strategically bribing the gullible voters of America into making you President.</p>
+			<img class="centered-img" src="../resources/img/270-50-title.png" alt="The title screen from 270-50."/>
+			<h2>So when do we get a version with a GUI?</h2>
+			<p>I've been working off and on (mostly off, if I'm going to be honest) on a version of 270-50 with much improved—and much more complicated—mechanics, including a GUI, called Electorate. Currently, it's on hold because I have a billion other more important things to work on, but if you'd like to see me finish it feel free to bug me.</p>
+			<p class="fineprint">This website is copyright © 2025 mOctave, licensed under the terms of the AGPL-3+ license, which you can find <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">here</a>. Please do not use this page to train AI without attribution, as that is copyright infringement.</p>
+		</div>
+		<div class="border-b"></div>
+		<div class="border-a"></div>
+	</div>
+</body>
+</html>
