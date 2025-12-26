@@ -28,7 +28,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
 	<link rel="stylesheet" href="resources/style.css"/>
-	<link rel="stylesheet" href="resources/skills.css"/>
 	<link rel="icon" href="resources/icon.png"/>
 </head>
 <body>
@@ -49,87 +48,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 			</div>
 			<div class="navbar-spacer"></div>
 			<h1>About Me</h1>
-			<p>So who exactly am I? I'm an amateur developer and copyeditor who likes to overcomplicate everything and then pick the nits out of it. I enjoy working with a variety of tools, both writing user-facing code (although I'll never love trying to get any sort of GUI working) and developing reliable backend libraries such as <a href="https://github.com/moctave/weftspace">Weftspace</a>. I'm a strong believer in human-written code, strong typing or good type annotations, and open-source software.</p>
+			<p>I'm an amateur programmer and copyeditor who values quality, human community-driven development. I enjoy taking a problem, overcomplicating it, and then picking the nits out of it until I get a polished, professional product. Although I have no official credentials (yet), I've been coding most of my life by this point and would consider myself an intermediate developer according to the <a href="https://github.com/Semalab/developer-skills-matrix/blob/main/rubric/rubric.md">Developer Skills Matrix</a>.</p>
+			<p>These days, I prefer to work in Java, although I also have a fair amount of experience in Python and Inform 7, spend far too much of my time doing web development, and I've dabbled in languages ranging from SQL and C++ to Intercal and assembly.</p>
+			<p>I've personally always enjoyed both the pursuit of excellence and gaining in-depth understanding of what I'm working with. Perhaps this is why I like strong typing and dislike vibe coding; I'd rather know exactly what I've written and have absolute confidence that it works because I've written the tests for it and it will fail fast and hard if anything goes wrong. Over the past couple of years, I've begun to appreciate elements of a systematic design approach, and I've recently been enjoying applying a test-driven development approach to projects like <a href="https://github.com/moctave/weftspace">Weftspace</a>.</p>
+			<p>Rather than focus on simply writing libraries or making apps, I enjoy doing both: I've created user-facing programs such as <a href="https://flagrank.moctave.net">Flagrank</a>, programmer-focused tools like <a href="https://github.com/moctave/mapgen">my ES Map Generator</a>, and backend libraries such as <a href="https://www.npmjs.com/package/phrasemaker">Phrasemaker</a>, and I hope to be able to continue to work on a range of projects in the future.</p>
+			<p>Beyond programming, I am also involved in the development of the open-source game <a href="https://github.com/endless-sky/endless-sky">Endless Sky</a> as a content reviewer, and I occasionally do 3D modelling work such as for my plugin <a href="https://github.com/mOctave/blended-ships">Blended Ships</a>.</p>
 			<p>If you're interested in what I'm doing, you can find me on <a href="https://github.com/mOctave">GitHub</a> or send me an <a href="mailto:moctave31415@gmail.com">email</a>. I'm also sometimes active on the Endless Sky Discord server, so you may be able to track me down there.</p>
-			<p>One of the things I do when I have time and motivation (almost never these days, hopefully more soon™), is content review for the game <a href="https://github.com/endless-sky/endless-sky">Endless Sky</a>. If you've never heard of it, I highly suggest you check it out: it was inspired by games like Escape Velocity but is very much its own game.</p>
-			<h2>My Skillset</h2>
-			<p>I would generally consider myself an intermediate developer according to the <a href="https://github.com/Semalab/developer-skills-matrix/blob/main/rubric/rubric.md">Developer Skills Matrix</a>, although admittedly I still have a lot to learn in certain areas.</p>
-			<p>I don't actually have any official software development-related certifications (something I'm currently looking to change), but I believe I still manage to possess documentation, debugging, and testing skills that generative AIs will forever lack. Over the last decade or so, I've learned how to program in about twenty different languages (most of them badly), and done several systematic development projects.</p>
-			<div class="skill-dropdown">
-				<div id="skill-click" onclick="toggleSkills()">For a Wikipedia-style list of some of my skills, click here.</div>
-				<div id="skill-drawer" height="0px">
-					<h3>Explanation</h3>
-					<p>This list has a whole bunch of programming-related skills all tossed together in one place. This includes programming and markup languages, IDEs/text editors, and development tools and libraries, but also other skills that are more focused on development as a whole rather than just smashing code. The numbers indicate roughly how good I think I am at something, following the following guidelines:</p>
-					<div class="skill-badge">I've touched this, but I'm by no means skilled at it.<span class="skill-1">1</span></div><br/>
-					<div class="skill-badge">I could probably do something with this, slowly.<span class="skill-2">2</span></div><br/>
-					<div class="skill-badge">I am reasonably proficient at this.<span class="skill-3">3</span></div><br/>
-					<div class="skill-badge">I could do this for a living.<span class="skill-4">4</span></div><br/>
-					<div class="skill-badge">I am one of very few people who truly understand the arcane ways of this.<span class="skill-5">5</span></div>
-					<h3>Skils</h3>
-					<div class="skill-badge">Ant<span class="skill-3">3</span></div>
-					<div class="skill-badge">ARM Assembly<span class="skill-1">1</span></div>
-					<div class="skill-badge">AWT<span class="skill-2">2</span></div>
-					<div class="skill-badge">Bash<span class="skill-2">2</span></div>
-					<div class="skill-badge">C++<span class="skill-2">2</span></div>
-					<div class="skill-badge">C#<span class="skill-2">2</span></div>
-					<div class="skill-badge">CI/CD<span class="skill-3">3</span></div>
-					<div class="skill-badge">CMake<span class="skill-2">2</span></div>
-					<div class="skill-badge">Code Review<span class="skill-4">4</span></div>
-					<div class="skill-badge">Command Line Use<span class="skill-3">3</span></div>
-					<div class="skill-badge">CSS<span class="skill-3">3</span></div>
-					<div class="skill-badge">Debugging<span class="skill-3">3</span></div>
-					<div class="skill-badge">DRRacket<span class="skill-2">2</span></div>
-					<div class="skill-badge">Endless Sky Datafile Syntax<span class="skill-5">5</span></div>
-					<div class="skill-badge">Git<span class="skill-3">3</span></div>
-					<div class="skill-badge">GitHub Actions<span class="skill-3">3</span></div>
-					<div class="skill-badge">GitHub Packages<span class="skill-3">3</span></div>
-					<div class="skill-badge">Formal Logic<span class="skill-3">3</span></div>
-					<div class="skill-badge">Fortran<span class="skill-1">1</span></div>
-					<div class="skill-badge">HTML<span class="skill-4">4</span></div>
-					<div class="skill-badge">Inform 6<span class="skill-1">1</span></div>
-					<div class="skill-badge">Inform 7<span class="skill-3">3</span></div>
-					<div class="skill-badge">Intercal<span class="skill-2">2</span></div>
-					<div class="skill-badge">Java<span class="skill-4">4</span></div>
-					<div class="skill-badge">JavaScript<span class="skill-3">3</span></div>
-					<div class="skill-badge">JSON<span class="skill-4">4</span></div>
-					<div class="skill-badge">Markdown<span class="skill-4">4</span></div>
-					<div class="skill-badge">Maven<span class="skill-3">3</span></div>
-					<div class="skill-badge">Nano<span class="skill-3">3</span></div>
-					<div class="skill-badge">NodeJS<span class="skill-3">3</span></div>
-					<div class="skill-badge">NPM<span class="skill-3">3</span></div>
-					<div class="skill-badge">Optimization<span class="skill-2">2</span></div>
-					<div class="skill-badge">Phaser<span class="skill-1">1</span></div>
-					<div class="skill-badge">Pseudocode<span class="skill-4">4</span></div>
-					<div class="skill-badge">PyPI<span class="skill-3">3</span></div>
-					<div class="skill-badge">Python<span class="skill-3">3</span></div>
-					<div class="skill-badge">Racket<span class="skill-3">3</span></div>
-					<div class="skill-badge">RegEx<span class="skill-3">3</span></div>
-					<div class="skill-badge">RISC Assembly/Machine Code<span class="skill-3">3</span></div>
-					<div class="skill-badge">Rust<span class="skill-2">2</span></div>
-					<div class="skill-badge">Scratch<span class="skill-5">5</span></div>
-					<div class="skill-badge">SQL<span class="skill-2">2</span></div>
-					<div class="skill-badge">Swift<span class="skill-3">3</span></div>
-					<div class="skill-badge">Swing<span class="skill-3">3</span></div>
-					<div class="skill-badge">TI Basic<span class="skill-4">4</span></div>
-					<div class="skill-badge">TOML<span class="skill-2">2</span></div>
-					<div class="skill-badge">Tracing<span class="skill-3">3</span></div>
-					<div class="skill-badge">Unit Testing<span class="skill-3">3</span></div>
-					<div class="skill-badge">Visual Studio Code<span class="skill-4">4</span></div>
-					<div class="skill-badge">Wordpress<span class="skill-2">2</span></div>
-					<div class="skill-badge">x86_64 Assembly<span class="skill-1">1</span></div>
-					<div class="skill-badge">XCode<span class="skill-2">2</span></div>
-					<div class="skill-badge">YAML<span class="skill-3">3</span></div>
-				</div>
-			</div>
-			<h2>What I'm Working On</h2>
-			<p>Currently, I have a few things going on. Firstly, I'm trying to learn a bit more formal program design and logic in a way that will get me some level of actual certification (read into that what you will). I'm also working on this website, of course, and I'd love to get around to working on Flagrank and my Endless Sky projects more.</p>
-			<p>I'm also working to improve my skills in a number of areas like writing unit tests and formal logic. I'd really like to go and seriously improve unit testing for some of my projects like Weftspace, and I'd also like to actually learn Rust properly (for the third time; last time I tried I eventually hit the brick wall of incompetence).</p>
-			<p>Of course, something else I'm working on is trying to stop giving myself so many projects.I've got one Endless-Sky related project under wraps, a couple of games I'd like to settle down and churn out, and pretty much no time to do most of it.</p>
-			<h2>What About That One Art Thing You Did?</h2>
-			<p>Oh, yeah, I have been known to create art sometimes. Usually it's not particularly good art (eg the background of this website), but some of it is not terrible—I'm fairly proud of most of my <a href="https://github.com/mOctave/blended-ships">Blended Ships</a>, for example, and I make all the icons for my projects myself.</p>
-			<h2>Who Are You Really?</h2>
-			<p>In 99% of cases, I'd prefer to keep my privacy, thank you. Big Tech probably knows exactly who I am, but I like to keep as much of my data where it can't be used against me in a scam as possible. That said: I'm a guy with a website who lives somewhere in Canada. If you need to verify my identity further because I've told you who I am, send me a UUID of your choice to my personal email and I'll reply with the same code from moctave31415@gmail.com.</p>
-			
+
 			<p class="fineprint">This website is copyright © 2025 mOctave, licensed under the terms of the AGPL-3+ license, which you can find <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">here</a>. Please do not use this page to train AI without attribution, as that is copyright infringement.</p>
 		</div>
 		<div class="border-b"></div>
