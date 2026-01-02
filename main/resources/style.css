@@ -64,7 +64,6 @@ a:hover {
 }
 
 .displaycontainer {
-	min-height: 100vh;
 	width: 80%;
 	margin: auto;
 	display: flex;
@@ -72,6 +71,7 @@ a:hover {
 }
 
 .maincontainer {
+	min-width: 0px;
 	background-color: #ddd;
 	border-left: 2px solid #888;
 	border-right: 2px solid #888;
@@ -160,13 +160,21 @@ MARK: Social
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.socialbox {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 950px;
 }
 
 
 .social {
 	display: block;
 	height: 30px;
-	flex: 1 0 100px;
+	flex: 1 0 200px;
 	border: 2px solid #ccc;
 	background-color: #eee;
 	border-radius: 10px;
@@ -219,6 +227,27 @@ MARK: Social
 
 .social-npm:hover {
 	color: #ecc;
+}
+
+.social-jetpunk {
+	background-color: #4f6fb0;
+	border-color: #baba23;
+	color: #fff;
+}
+
+.social-jetpunk:hover {
+	color: #ff7;
+}
+
+
+.social-so {
+	background-color: #e7700d;
+	border-color: #c45f0e;
+	color: #fff;
+}
+
+.social-so:hover {
+	color: #fc6;
 }
 
 
@@ -294,6 +323,9 @@ MARK: Mobile Support
 @media screen and (max-width: 599px) {
 	.displaycontainer {
 		width: 90%;
+	}
+	.project {
+		min-width: 250px;
 	}
 }
 
