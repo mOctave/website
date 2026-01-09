@@ -1,0 +1,91 @@
+<!--
+moctave.net - My personal website.
+Copyright (C) 2025 mOctave
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>Why I Use an Adblocker | mOctave's Blog</title>
+	<meta name="title" content="Why I Use an Adblocker | mOctave's Blog"/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Ads are costly, slow, and dangerous. My solution? Using an abdlocker. Find out more here."/>
+	<meta name="keywords" content="moctave blog ads adblocker ublock"/>
+	<meta author="mOctave"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="../resources/style.css"/>
+	<link rel="icon" href="../resources/icon.png"/>
+</head>
+<body>
+	<div class="displaycontainer">
+		<div class="border-a"></div>
+		<div class="border-b"></div>
+		<div class="maincontainer">
+			<div class="navbar">
+				<a class="navbar-item" href="../index.html">mOctave</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../projects.html">Projects</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../about.html">About</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../blog.html">Blog</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="https://github.com/mOctave">GitHub</a>
+			</div>
+			<div class="navbar-spacer"></div>
+			<h1>Why I Use an Adblocker</h1>
+			<p class="date">8 January 2026</p>
+			<p>There are some things on the internet that you want to see. There are many things that you really don't want to. And then there's ads.</p>
+			<p>Ads are tricky. On the one hand, they're annoying. They take up screen space, they waste your time, they tend to be just plain ugly, and they constantly shove random products in your face. Still, many sites legitimately rely on ads to pay their bills, including lots of sites that I appreciate and use regularly. In the modern world, ads are a necessary evil, a way for stingy consumers to access content for free while still paying such content's creators.</p>
+			<p>Yet I still block ads, for three big reasons.</p>
+			<h2>Ads Are Costly</h2>
+			<p>Advertising is by nature a value-destroying industry. In most cases, a company pays for ads because its competitors do and they can't afford not to. Sure, there's a few places where you might find ads that legitimately interest you, but I find that such ads tend to be selected by a website owner rather than being served by a larger ad network. Often, these ads are directly embedded in a webpage, so adblockers usually don't block them without special configuration, allowing you to still see ads that a website owner thinks are genuinely helpful.</p>
+			<figure class="centered-fig">
+				<img src="../resources/img/blog-15-nap.png" alt="An ad for a website owner's new book."/>
+				<figcaption>I have no problem at all with this ad, nor does my adblocker block it.</figcaption>
+			</figure>
+			<p>Such cases are uncommon, particularly among large websites. Most sites with ads work with a major platform like Google Ads to serve them. According to <a href="https://adsnextgen.com/how-much-do-websites-make-from-ad/">Adsnextgen</a> (and some quick math), a website with ads will earn between one and two cents per pageview on average. This is complicated by the fact that many ad platforms use a <a href="https://www.investopedia.com/terms/c/cpc.asp">Pay-per-Click model</a>, so unless you actually click on ads, website owners may not be earning money on them. If you're someone like me who makes a point of never clicking on ads, you may as well just block them.</p>
+			<p>In fact, even if you're not clicking on ads, they cost you. Suppose, for example, you're playing a game on your phone. You don't have Wifi, but that doesn't matter because the game you're playing doesn't need it. Without ads, you're paying nothing. However, as soon as you accidentally leave your data turned on, the app loads and caches 20MB of ads in the background (source: personal experience). If we do some rough estimating and assume you're paying $10 per gigabyte of data, those ads—which you don't want to see and are netting the developers maybe a couple of cents—just cost you twenty cents to load.</p>
+			<p>The same is true of anytime you're paying by the byte for your internet: ads take up bandwidth to transmit, so they cost you money. They can very easily cost you more than an app developer or site owner could possibly make from them.</p>
+			<h2>Ads Are Slow</h2>
+			<p>Specifically, ads slow down loading times. A lot. Even ignoring video ads that actively delay your access to content, the act of loading ads can seriously degrade a website's performance. A typical site probably isn't loading 20MB of ads like my mobile game did, but it could easily try to load a megabyte or two of them. If you have a bad internet connection, you may only be getting data at 5 or 10 Mbps, so this could easily add a couple seconds to the time a page takes to load. In fact, way back in 2016, Sitecare found in <a href="https://sitecare.com/website-loading-slowly/">this article</a> that for some pages ads can more than double loading times.</p>
+			<figure class="centered-fig">
+				<img src="../resources/img/blog-15-pgs.png" alt="The Pagespeed report for moctave.net. All indicators are good to moderate."/>
+				<figcaption>See, no ads and my website loads nice and fast. Proof!</figcaption>
+			</figure>
+			<p>Ten years later, I still notice this behaviour. With a few exceptions, whenever I turn off my adblockers, things slow way down despite my generally solid internet connection and decent computer specs. Since I'm a <span class="struck">hacker</span> person who often tries to access lots of pages quickly for completely legitimate purposes, every second counts—a sentiment <a href="https://www.hobo-web.co.uk/your-website-design-should-load-in-4-seconds/">apparently shared by at least 40% of internet users</a>.</p>
+			<p>While there <em>are</em> ways to speed up ad loading, lots of sites don't, so it's easiest to just block the ads.</p>
+			<h2>Ads are Dangerous</h2>
+			<p>Not only are ads unpleasant, they can actually be actively dangerous. Especially in the past several years, there have been lots of <a href="https://www.crowdstrike.com/en-us/cybersecurity-101/malware/malvertising/">malvertising</a> <a href="https://www.forenova.com/blog/real-world-examples-of-malvertising/">attacks</a>, where a seemingly innocent ad is used to install harmful files or direct a user to a malicious site. While any one ad is unlikely to give your computer a virus, you run a risk from continued exposure. All it takes is accidentally clicking on one fake download button to brick your computer or steal your personal data.</p>
+			<p>Then, of course, you have the entire world of targeted advertising. Although it might not seem like much, small amounts of information are collected about you by ad providers on just about every site that has ads. Maybe targeted ads themselves aren't something you have a problem with, but every bit of data collected about you on the internet could be leaked. In some situations, that information could be sold to scammers... or <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">used in a political campaign without your consent</a>. While you could try to turn off all your cookies, block analytics scripts, and so on, it is much easier to get an off-the-shelf adblocker to do it for you.</p>
+			<figure class="centered-fig">
+				<img src="../resources/img/blog-15-nfe.png" alt="uMatrix origin's dashboard, a brilliant array of red and green squares that are completely unintelligable to the casual user."/>
+				<figcaption>See? Blocking ads is easy... hey, where are you going?</figcaption>
+			</figure>
+			<h2>How I Block Ads</h2>
+			<p>So, say you're convinced and you want to block ads, how can you go about doing it?</p>
+			<p>Well, the first part of the solution is to stop using Chrome. Google <a href="https://lifehacker.com/tech/google-cracking-down-on-ad-blockers">recently made blocking ads much harder</a> with Manifest V3, and while Chrome adblockers do exist, they tend to be crippled and often don't work at all with platforms like YouTube.</p>
+			<p>Beyond that, what browser you use is, of course, up to you. Just please don't choose Internet explorer. I like to use Firefox (I know, stuck in the past, yada yada), since I find it actually tends to work better than Chrome for most websites and is fairly friendly toward privacy extensions.</p>
+			<p>Then comes the choice of adblocker. Whatever browser you pick, there's probably several free, fairly respectable options available. Some browsers like <a href="https://helium.computer/">Helium</a> or <a href="https://brave.com/">Brave</a> come with adblockers built-in. I use <a href="https://ublockorigin.com/">uBlock Origin</a>, mostly because it's what I've always used and it blocks analytics sites along with ads. I also use uMatrix, but it's a whole different beast and requires lots of configuration to work well with many wesbites. Whatever you choose, do your research. Don't just take my word on it.</p>
+			<div class="link-footer"><a class="link-left" href="14-blended-ships-sosumi.html">← Blended Ships: Sosumi</a></div>
+			<p class="fineprint">This website is copyright © 2025 mOctave, licensed under the terms of the AGPL-3+ license, which you can find <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">here</a>. Using this page to train AI without attribution constitutes copyright infringement. For a complete license and privacy policy, click <a href="../terms.html">here</a>.</p>
+		</div>
+		<div class="border-b"></div>
+		<div class="border-a"></div>
+	</div>
+</body>
+</html>

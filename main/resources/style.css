@@ -59,6 +59,10 @@ pre {
 	padding: 15px;
 }
 
+.struck {
+	text-decoration: line-through;
+}
+
 a:hover {
 	color: #0ab7cb;
 }
@@ -149,6 +153,27 @@ MARK: Projects
 	display: block;
 	margin: auto;
 	border-radius: 5px;
+}
+
+
+.centered-fig {
+	width: 100%;
+	max-width: 400px;
+	display: block;
+	margin: auto;
+}
+
+.centered-fig img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+figcaption {
+	font-size: small;
+	text-align: center;
+	margin-top: 5px;
+	color:#555;
+	font-style: italic;
 }
 
 
