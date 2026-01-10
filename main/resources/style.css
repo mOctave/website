@@ -360,5 +360,6 @@ MARK: Fonts
 */
 @font-face {
 	font-family: "Orbitron";
+	font-display: swap;
 	src: url("font/Orbitron.woff2");
 }
