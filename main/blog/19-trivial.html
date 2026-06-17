@@ -1,0 +1,87 @@
+<!--
+moctave.net - My personal website.
+Copyright (C) 2026 mOctave
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>Trivial | mOctave's Blog</title>
+	<meta name="title" content="Trivial | mOctave's Blog"/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Learn about Trivial, a competitive trivia game and my latest web development project."/>
+	<meta name="keywords" content="moctave blog trivial trivia nodejs mongoose"/>
+	<meta author="mOctave"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="../resources/style.css"/>
+	<link rel="icon" href="../resources/icon.png"/>
+</head>
+<body>
+	<div class="displaycontainer">
+		<div class="border-a"></div>
+		<div class="border-b"></div>
+		<div class="maincontainer">
+			<nav class="navbar">
+				<a class="navbar-item" href="../index.html">mOctave</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../projects.html">Projects</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../about.html">About</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../blog.html">Blog</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="https://github.com/mOctave">GitHub</a>
+			</nav>
+			
+			<div class="navbar-spacer"></div>
+			
+			<main role="main">
+				<h1>Trivial</h1>
+				<p class="date">16 June 2026</p>
+				<p>Shortly after publishing <a href="./18-bitwise.html">Bitwise</a>, I started working on another project that I've been meaning to get around to for a little while: a competitve trivia game that lets players challenge each other to questions of their own choosing that I dubbed Trivial. For the last couple of weeks, Trivial has been up as a public beta, and you can play it now at <a href="https://trivial.moctave.net">trivial.moctave.net</a>.</p>
+				<p>The project's still a little rough around the edges. There's content missing, there are some very simple exploits you can use to manipulate your duels rating, and beta testing revealed inexplicable intermittent lag that seems to be an issue with the server in my basement rather than the code itself. However, it is available, it is playable, and it is probably the most complex web development project I've attempted yet.</p>
+				<figure class="centered-fig">
+					<img src="../resources/img/blog-19-andorra.png" alt="A screenshot of the Trivial Play page... logged into the superuser account, naturally."/>
+					<figcaption>What, you're going to read this caption instead of playing the game? Smh.</figcaption>
+				</figure>
+				<p>The basic framework of the project isn't too different from Flagrank: there's a NodeJS Express backend (albeit with a much better structure than Flagrank and separate routes, controllers, and services), an EJS frontend that is hacked together but generally functions, and a whole bunch of SVGs tossed in for good measure. However, the first big change is that this time around I actually used a proper database.</p>
+				<p>While working on <a href="17-paper-cuts.html">Paper Cuts</a>, I was introduced to MongoDB for the first real time. I had heard of it before, but that project really let me see how useful it was. If, like me, the last time you touched SQL was five years ago and it resulted in the destruction of your sanity and/or database, MongoDB and Mongoose is a much easier way to get all the protections of a database while only having to remember a few method calls. Best of all, the whole thing is basically just JSON which means it should even be compatible with Flagrank if I ever decide to update it.</p>
+				<p>Of course, there were lots of other challenges with this project. For one, its scope was <em>way</em> bigger than Flagrank. Instead of a (not-so) glorified voting system, I had to build:</p>
+				<ul>
+					<li>the game,</li>
+					<li>the system to host/join/be automatically paired up for games,</li>
+					<li>the system to create and manage decks and cards, and of course</li>
+					<li><b>sEcUrItY fEaTuReS</b></li>
+				</ul>
+				<p>If you think you can't trust anyone who types the words "sEcUrItY fEaTuReS" like that to put together a safe website and not sell your data to Cambridge Analytica, welllll... you have a point. Please don't use your nuclear launch codes as your username and password. However, by using JSON web tokens, proper server-side hashing algorithms, and cookies, I've managed to scrape together an authentication system that lets you use the website with a single sign-on per session whilst not bleeding your data all over the place.</p>
+				<p>Seriously though, no nuclear launch codes. Just because I learned a lot about authentication doing this project doesn't mean you should trust my database-on-a-server-in-my-basement security setup.</p>
+				<p>Lastly, I learned a huge amount about how Javascript (and by extension NodeJS) works. Between dabbling with asynchronous functions, correctly managing imports and routes, and learning that there are better ways than 
+				<pre>foo.innerHTML += `<div class="new-div-im-trying-to-add">${Content of the div}</div>`</pre>
+				to manipulate page content, this project's codebase is a lot messier than many of my recent projects but will also enable me to make much less of a mess with my newfound knowledge in the future.</p>
+				<p>If you'd like to play Trivial, you can register for an account (just remember no nuclear secrets) by <a href="https://trivial.moctave.net/login">clicking here</a>. There are still lots of minor bugs and I'm planning plenty more features, so if you'd like to watch my progress or maybe even help make things better yourself you can find the source code <a href="https://github.com/moctave/trivial">on GitHub</a>.</p>
+				<div class="link-footer"><a class="link-left" href="18-bitwise.html">← Bitwise</a></div>
+			</main>
+			
+			<footer role="contentinfo">
+				<p class="fineprint">This website is copyright © 2026 mOctave, licensed under the terms of the AGPL-3+ license, which you can find <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">on GNU's website</a>. Using this page to train AI without attribution constitutes copyright infringement. For other licensing information and my privacy policy, visit <a href="../terms.html">my terms page</a>.</p>
+			</footer>
+		</div>
+		<div class="border-b"></div>
+		<div class="border-a"></div>
+	</div>
+</body>
+</html>
