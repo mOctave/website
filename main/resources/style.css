@@ -59,6 +59,15 @@ pre {
 	padding: 15px;
 }
 
+.code {
+	font-family: monospace;
+	color: #5a2;
+	background-color: #111;
+	border-radius: 2px;
+	padding: 3px;
+	font-size: small;
+}
+
 .struck {
 	text-decoration: line-through;
 }

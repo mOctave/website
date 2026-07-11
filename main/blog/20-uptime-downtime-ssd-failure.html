@@ -1,0 +1,75 @@
+<!--
+moctave.net - My personal website.
+Copyright (C) 2026 mOctave
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>Uptime, Downtime, SSD Failure | mOctave's Blog</title>
+	<meta name="title" content="Uptime, Downtime, SSD Failure | mOctave's Blog"/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Recently my entire website got taken out by catastrophic SSD failure. Learn about what that means for things and what I'm doing to make next time less bad."/>
+	<meta name="keywords" content="moctave blog uptime monitoring ssd kaboom"/>
+	<meta author="mOctave"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="../resources/style.css"/>
+	<link rel="icon" href="../resources/icon.png"/>
+</head>
+<body>
+	<div class="displaycontainer">
+		<div class="border-a"></div>
+		<div class="border-b"></div>
+		<div class="maincontainer">
+			<nav class="navbar">
+				<a class="navbar-item" href="../index.html">mOctave</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../projects.html">Projects</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../about.html">About</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../blog.html">Blog</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="https://github.com/mOctave">GitHub</a>
+			</nav>
+			
+			<div class="navbar-spacer"></div>
+			
+			<main role="main">
+				<h1>Uptime, Downtime, SSD Failure</h1>
+				<p class="date">10 July 2026</p>
+				<p>You may have noticed (or not) that this website was down recently. Apparently the server suffered a catastrophic SSD failure sometime on July 1. The good news: there was already a second SSD ready to be put to use. The bad news: the server had previously decided not to back up for six months straight.</p>
+				<p>Thankfully, because I keep the majority of my website under source control beyond a couple of config files and my new Trivial database, it was relatively easy to just use <span class="code">git clone</span> and/or <span class="code">git pull</span> to get most of the important data back, and I was able to manually restore the config files to proper working order. In the end, the only notable casualty is the Trivial database, which needed to be cleaned up anyways but probably didn't deserve complete annihilation? Oh well.</p>
+				<figure class="centered-fig">
+					<img src="../resources/img/blog-20-uptime-robot.png" alt="A screenshot of my UptimeRobot monitors page."/>
+					<figcaption>I didn't know it was possible for a website to be this well laid-out and this ugly at the same time... but it works.</figcaption>
+				</figure>
+				<p>So, how am I going to prevent my website going down for a week in the future? I'm glad you asked.</p>
+				<p>Firstly, and most importantly, I'm now monitoring the main site, Flagrank, and Trivial with <a href="https://stats.uptimerobot.com/4y8g2sxwxR">UptimeRobot</a>. This should allow me to realize if my site is down and respond within ten minutes instead of ten days.</p>
+				<p>Additionally, it's served as a good reminder to me that I really should start looking into how to do backups for MongoDB databases, improve Flagrank to use an actual database and <span class="code">npm start</span>, and get MongoDB and my two Express servers running on the server as services. But, naturally, just because I have that reminder doesn't mean I'll do anything about it.</p>
+				<div class="link-footer"><a class="link-left" href="19-trivial.html">← Trivial</a></div>
+			</main>
+			
+			<footer role="contentinfo">
+				<p class="fineprint">This website is copyright © 2026 mOctave, licensed under the terms of the AGPL-3+ license, which you can find <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">on GNU's website</a>. Using this page to train AI without attribution constitutes copyright infringement. For other licensing information and my privacy policy, visit <a href="../terms.html">my terms page</a>.</p>
+			</footer>
+		</div>
+		<div class="border-b"></div>
+		<div class="border-a"></div>
+	</div>
+</body>
+</html>
