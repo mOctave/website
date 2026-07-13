@@ -1,0 +1,76 @@
+<!--
+moctave.net - My personal website.
+Copyright (C) 2026 mOctave
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<title>Flagrank Overhaul | mOctave's Blog</title>
+	<meta name="title" content="Flagrank Overhaul | mOctave's Blog"/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="I finally got around to overhauling the Flagrank codebase, properly using best practices and implementing an actual proper database with MongoDB instead of the mess I was using."/>
+	<meta name="keywords" content="moctave blog flagrank mongoose mongodb overhaul"/>
+	<meta author="mOctave"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" href="../resources/style.css"/>
+	<link rel="icon" href="../resources/icon.png"/>
+</head>
+<body>
+	<div class="displaycontainer">
+		<div class="border-a"></div>
+		<div class="border-b"></div>
+		<div class="maincontainer">
+			<nav class="navbar">
+				<a class="navbar-item" href="../index.html">mOctave</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../projects.html">Projects</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../about.html">About</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="../blog.html">Blog</a>
+				<span class="navbar-sep">•</span>
+				<a class="navbar-item" href="https://github.com/mOctave">GitHub</a>
+			</nav>
+			
+			<div class="navbar-spacer"></div>
+			
+			<main role="main">
+				<h1>Flagrank Overhaul</h1>
+				<p class="date">12 July 2026</p>
+				<p>It's happened. It's finally happened.</p>
+				<p>After months of procrastinating, then trying to figure out how to use MySQL, then procrastinating, then going off and doing other projects (eg <a href="17-paper-cuts.html">Paper Cuts</a> and <a href="https://trivial.moctave.net">Trivial</a>), I finally got around to actually fixing my very bad Flagrank server code.</p>
+				<p>What does that mean? Well, first of all, there's now a database. Changes to flag rankings are recorded instantly in an industry-standard way rather than as a JSON file saved every eight hours. JSON isn't going away, though. It should be really easy to just add more flags, since all I'll have to do to add them is add new entries to a master JSON file and then the server will plop them into the database when it boots up. Unfortunately, all these changes will be accompanied by a database reset, since I didn't feel like figuring out how to convert everything. Fortunately, the last six months of data was just lost anyways (see <a href="20-uptime-downtime-ssd-failure.html">my last blog post</a>), so I can't think of a better time to just destroy it all and start over.</p>
+				<figure class="centered-fig">
+					<img src="../resources/img/blog-21-new-flags.png" alt="Some of the flags that grace the home page of the newly-reset Flagrank."/>
+					<figcaption>Wow, some of these flags haven't been seen around here in... ever? Hello, Qatar.</figcaption>
+				</figure>
+				<p>On the backend, the changes have been just as big. Rather than having a single Javascript file do all the work, the server code now spans nine files with reasonably clearly defined responsibilities. Important information is stored in a .env file rather than kept around loose, I've deleted the superfluous <span class="code">package-lock.json</span> from the Git repository, and I can now start the server with <span class="code">npm start</span> rather than trying to remember the name of the file to call with <span class="code">node [filename]</span>. I'm not sure if all these changes will lead to improved performance on the server, but it will definitely lead to improved performance in my brain when I'm trying to make changes and maintain everything.</p>
+				<p>As always, any contributions are welcome (see the <a href="https://github.com/mOctave/flagrank">GitHub repo</a>). I'd also love it if you decide you're ready to become addicted to clicking flags again—we need to rebuild the dataset somehow!</p>
+
+				<div class="link-footer"><a class="link-left" href="20-uptime-downtime-ssd-failure.html">← Uptime, Downtime, SSD Failure</a></div>
+			</main>
+			
+			<footer role="contentinfo">
+				<p class="fineprint">This website is copyright © 2026 mOctave, licensed under the terms of the AGPL-3+ license, which you can find <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">on GNU's website</a>. Using this page to train AI without attribution constitutes copyright infringement. For other licensing information and my privacy policy, visit <a href="../terms.html">my terms page</a>.</p>
+			</footer>
+		</div>
+		<div class="border-b"></div>
+		<div class="border-a"></div>
+	</div>
+</body>
+</html>
