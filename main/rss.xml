@@ -1,6 +1,7 @@
 <rss version="2.0">
 	<channel>
 		<title>mOctave's Blog</title>
+		<atom:link href="http://moctave.net/rss.xml" rel="self" type="application/rss+xml"/>
 		<link>https://moctave.net/blog</link>
 		<description>The latest ramblings I've posted on my blog.</description>
 		<webMaster>moctave31415@gmail.com</webMaster>
