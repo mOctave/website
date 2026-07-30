@@ -1,0 +1,80 @@
+<rss version="2.0">
+	<channel>
+		<title>mOctave's Blog</title>
+		<link>https://moctave.net/blog</link>
+		<description>The latest ramblings I've posted on my blog.</description>
+		<webMaster>moctave31415@gmail.com</webMaster>
+		<language>en-ca</language>
+		<copyright>2026 mOctave. AGPL-3+</copyright>
+		<item>
+			<title>Flagrank Overhaul | mOctave's Blog</title>
+			<link>https://moctave.net/blog/21-flagrank-overhaul.html</link>
+			<guid>https://moctave.net/blog/21-flagrank-overhaul.html</guid>
+			<description>I finally got around to overhauling the Flagrank codebase, properly using best practices and implementing an actual proper database with MongoDB instead of the mess I was using.</description>
+			<pubDate>Sun, 12 Jul 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Uptime, Downtime, SSD Failure | mOctave's Blog</title>
+			<link>https://moctave.net/blog/20-uptime-downtime-ssd-failure.html</link>
+			<guid>https://moctave.net/blog/20-uptime-downtime-ssd-failure.html</guid>
+			<description>Recently my entire website got taken out by catastrophic SSD failure. Learn about what that means for things and what I'm doing to make next time less bad.</description>
+			<pubDate>Fri, 10 Jul 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Trivial | mOctave's Blog</title>
+			<link>https://moctave.net/blog/19-trivial.html</link>
+			<guid>https://moctave.net/blog/19-trivial.html</guid>
+			<description>Learn about Trivial, a competitive trivia game and my latest web development project.</description>
+			<pubDate>Tue, 16 Jun 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Bitwise | mOctave's Blog</title>
+			<link>https://moctave.net/blog/18-bitwise.html</link>
+			<guid>https://moctave.net/blog/18-bitwise.html</guid>
+			<description>Learn a little bit about Bitwise, my new RISC simulator.</description>
+			<pubDate>Mon, 04 May 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Paper Cuts | mOctave's Blog</title>
+			<link>https://moctave.net/blog/17-paper-cuts.html</link>
+			<guid>https://moctave.net/blog/17-paper-cuts.html</guid>
+			<description>I went to a hackathon! It was a great experience and a major learning opportunity even if we didn't win anything.</description>
+			<pubDate>Fri, 20 Feb 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Taskship: Reborn | mOctave's Blog</title>
+			<link>https://moctave.net/blog/16-taskship-reborn.html</link>
+			<guid>https://moctave.net/blog/16-taskship-reborn.html</guid>
+			<description>After three years of sitting collecting dust, Taskship 3.0.0 is out, with custom jobs for many human ships in Endless Sky.</description>
+			<pubDate>Fri, 16 Jan 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Why I Use an Adblocker | mOctave's Blog</title>
+			<link>https://moctave.net/blog/15-adblocker.html</link>
+			<guid>https://moctave.net/blog/15-adblocker.html</guid>
+			<description>Ads are costly, slow, and dangerous. My solution? Using an abdlocker. Find out more here.</description>
+			<pubDate>Sat, 10 Jan 2026 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Blended Ships: Sosumi | mOctave's Blog</title>
+			<link>https://moctave.net/blog/14-blended-ships-sosumi.html</link>
+			<guid>https://moctave.net/blog/14-blended-ships-sosumi.html</guid>
+			<description>Blended Ships 1.3.0 is out, with new ships, new content, and new bugfixes! Merry Christmas, everyone.</description>
+			<pubDate>Wed, 24 Dec 2025 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Flashbang Time | mOctave's Blog</title>
+			<link>https://moctave.net/blog/13-flashbang-time.html</link>
+			<guid>https://moctave.net/blog/13-flashbang-time.html</guid>
+			<description>So I overhauled my website again...</description>
+			<pubDate>Sat, 20 Dec 2025 00:00:00 -0700</pubDate>
+		</item>
+		<item>
+			<title>Website Improvements | mOctave's Blog</title>
+			<link>https://moctave.net/blog/12-website-improvements.html</link>
+			<guid>https://moctave.net/blog/12-website-improvements.html</guid>
+			<description>I've done a bit more work on my website, and I now have a blog. Let me know what you think!</description>
+			<pubDate>Mon, 13 Oct 2025 00:00:00 -0700</pubDate>
+		</item>
+	</channel>
+</rss>

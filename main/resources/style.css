@@ -109,6 +109,147 @@ a:hover {
 	min-height: 100vh;
 }
 
+/*
+MARK: RSS Widget
+*/
+
+.rss {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #F78422;
+	transition: background-color 0.2s;
+}
+
+.rss:hover {
+	background-color: #f59948;
+}
+
+
+/*
+MARK: Blog Links
+*/
+
+.blogcontainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.latestblog {
+	flex: 3 3 200px;
+	color: #eee;
+}
+
+.allblogs {
+	flex: 1 1 50px;
+	border: 2px solid #ccc;
+	background-color: #eee;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rsslink {
+	flex: 1 1 50px;
+	border: 2px solid #f59948;
+	background-color: #F78422;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rsslink:hover {
+	background-color: #f59948;
+	color: black;
+}
+
+.rsslink img {
+	height: 25px;
+	padding-right: 10px;
+}
+
+
+.allblogs:hover {
+	background-color: #0ab7cb;
+	color: black;
+}
+
+
+.bloglink {
+	color: #eee;
+	display: block;
+	width: calc(100% - 40px);
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.latestblog, .allblogs, .bloglink, .rsslink {
+	text-decoration: none;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	transition: background-color 0.2s;
+	text-align: center;
+}
+
+.release {
+	background-color: #b81;
+	border: 2px solid rgb(221, 170, 50);
+}
+
+.release:hover {
+	background-color: rgb(221, 170, 50);
+}
+
+.update {
+	background-color: #08b;
+	border: 2px solid #0ab7cb;
+}
+
+.update:hover {
+	background-color: #0ab7cb;
+}
+
+.opinion {
+	background-color: #075;
+	border: 2px solid rgb(10, 165, 121);
+}
+
+.opinion:hover {
+	background-color: rgb(10, 165, 121);
+}
+
+.bloglink:hover, .latestblog:hover {
+	color: #eee;
+}
+
+.bloglink *, .latestblog * {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.blogtitle {
+	font-weight: bold;
+	display: block;
+}
+
+.blogtype {
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.blogdate {
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.7);
+}
 
 
 /*
@@ -132,6 +273,7 @@ MARK: Projects
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	transition: background-color 0.2s;
 }
 
 .project:hover {
