@@ -8,6 +8,13 @@
 		<language>en-ca</language>
 		<copyright>2026 mOctave. AGPL-3+</copyright>
 		<item>
+			<title>Weftspace 2.0.0 | mOctave's Blog</title>
+			<link>https://moctave.net/blog/23-weftspace-2.html</link>
+			<guid>https://moctave.net/blog/23-weftspace-2.html</guid>
+			<description>Weftspace version 2 is out! This release overhauls large parts of the library, putting more control in your hands and adding a huge amount of unit testing and style checking.</description>
+			<pubDate>Sat, 02 Aug 2026 20:40:00 -0700</pubDate>
+		</item>
+		<item>
 			<title>Blogging Like it's 2003 | mOctave's Blog</title>
 			<link>https://moctave.net/blog/22-blogging-like-2003.html</link>
 			<guid>https://moctave.net/blog/22-blogging-like-2003.html</guid>
