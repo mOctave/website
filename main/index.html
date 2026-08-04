@@ -62,25 +62,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 				<h2>Projects</h2>
 				<p>Here's a couple of things I've done recently. For a more complete list, see my <a href="projects.html">projects page</a>.</p>
 				<div class="projectcontainer">
-					<a class="project" href="https://trivial.moctave.net">
-						<img src="resources/img/thumb-trivial.png" alt="Trivial's icon"/>
-						<div class="projectbody"><h2>Trivial</h2><p>A recent project of mine, using NodeJS, Express, and Mongoose to create a competitive multiplayer trivia quiz. Now you, too, can compete for the title of ultimate party bore.</p></div>
-					</a>
-					<a class="project" href="https://github.com/mOctave/blended-ships">
-						<img src="resources/img/thumb-blended-ships.png" alt="Blended Ships' icon"/>
-						<div class="projectbody"><h2>Blended Ships</h2><p>Blended Ships is by far my largest and most polished ES plugin, attempting to introduce some element of realism (sorry Azure) into ship splicing.</p></div>
-					</a>
-					<a class="project" href="https://github.com/mOctave/bitwise">
-						<img src="resources/img/thumb-bitwise.png" alt="Bitwise's icon"/>
-						<div class="projectbody"><h2>Bitwise</h2><p>Bitwise is a novel RISC simulator designed to provide a stepping stone between simple graphical demos and more complicated technical systems. It provides both a GUI and CLI to allow the user to write, execute, and understand the instructions a simple computer could use to process data.</p></div>
-					</a>
-					<a class="project" style="opacity: 0;"></a>
-					<a class="project" style="opacity: 0;"></a>
-					<a class="project" style="opacity: 0;"></a>
-					<a class="project" style="opacity: 0;"></a>
-					<a class="project" style="opacity: 0;"></a>
-					<a class="project" style="opacity: 0;"></a>
-					<a class="project" style="opacity: 0;"></a>
+					<!-- The contents of this div are auto-generated -->
 				</div>
 				<div class="socialcontainer">
 					<div class="socialglue"></div>
@@ -128,5 +110,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<div class="border-b"></div>
 		<div class="border-a"></div>
 	</div>
+
+	<script src="scripts/projects.js">
+	</script>
+	<script>
+		window.onload = () => {
+			console.log("Active");
+			populateContainers(3, "resources/img/");
+		}
+	</script>
 </body>
 </html>
