@@ -52,6 +52,14 @@ a {
 	text-decoration: dotted underline;
 }
 
+hr {
+	background-color: #bbb;
+	border: 0;
+	border-radius: 2px;
+	height: 3px;
+	width: 50%;
+}
+
 pre {
 	color: #5a2;
 	background-color: #111;
@@ -446,11 +454,11 @@ MARK: Social
 .social-pypi {
 	background-color: #39d;
 	border-color: #44b7fb;
-	color: #fd4;
+	color: #fff;
 }
 
 .social-pypi:hover {
-	color: #db2;
+	color: #fd4;
 }
 
 
@@ -516,15 +524,15 @@ MARK: Navbar
 
 a.navbar-item {
 	text-decoration: none;
-	color: #380;
-}
-
-a.navbar-item:hover {
 	color: #075;
 }
 
+a.navbar-item:hover {
+	color: rgb(10, 165, 121);
+}
+
 span.navbar-item {
-	color: #444;
+	color: #222;
 }
 
 .date {
