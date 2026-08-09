@@ -36,6 +36,7 @@ h1 {
 	text-align: center;
 	font-weight: 400;
 	font-family: "Orbitron";
+	height: 40px;
 }
 
 h2 {
@@ -150,13 +151,26 @@ MARK: Blog Links
 
 .blogcontainer {
 	width: 100%;
+	height: 100px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .latestblog {
 	flex: 3 3 200px;
 	color: #fff;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.latestblog span, .bloglink span {
+	white-space: nowrap;
 }
 
 .allblogs {
@@ -167,6 +181,7 @@ MARK: Blog Links
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-self: stretch;
 }
 
 .rsslink {
@@ -177,6 +192,7 @@ MARK: Blog Links
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-self: stretch;
 }
 
 .rsslink:hover {
