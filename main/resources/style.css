@@ -121,7 +121,7 @@ a:hover {
 MARK: RSS Widget
 */
 
-.rss, .mobile-rss {
+.rss, .rss-mobile {
 	position: fixed;
 	top: 10px;
 	right: 10px;
@@ -134,11 +134,11 @@ MARK: RSS Widget
 	z-index: 1;
 }
 
-.mobile-rss {
-	display: hidden;
+.rss-mobile {
+	display: none;
 }
 
-.rss:hover, .mobile-rss:hover {
+.rss:hover, .rss-mobile:hover {
 	background-color: #f59948;
 }
 
@@ -576,10 +576,10 @@ MARK: Mobile Support
 	.rsslink {
 		display: none;
 	}
-	.mobile-rss {
+	.rss-mobile {
 		display: block;
 	}
-	.rss, .mobile-rss {
+	.rss, .rss-mobile {
 		top: unset;
 		bottom: 10px;
 	}
@@ -589,7 +589,7 @@ MARK: Mobile Support
 	.project {
 		min-width: calc(100% - 20px);
 	}
-	.rss, .mobile-rss {
+	.rss, .rss-mobile {
 		width: 20px;
 		height: 20px;
 	}
