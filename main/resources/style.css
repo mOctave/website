@@ -28,7 +28,7 @@ html {
 body {
 	margin: 0px;
 	background: linear-gradient(rgba(220, 220, 220, 1), rgba(180, 180, 180, 0.5)),
-	url("img/bg-tex.jpg");
+	url("img/bg-tex.webp");
 }
 
 h1 {
@@ -113,7 +113,7 @@ a:hover {
 MARK: RSS Widget
 */
 
-.rss {
+.rss, .mobile-rss {
 	position: fixed;
 	top: 10px;
 	right: 10px;
@@ -123,11 +123,17 @@ MARK: RSS Widget
 	overflow: hidden;
 	background-color: #F78422;
 	transition: background-color 0.2s;
+	z-index: 1;
 }
 
-.rss:hover {
+.mobile-rss {
+	display: hidden;
+}
+
+.rss:hover, .mobile-rss:hover {
 	background-color: #f59948;
 }
+
 
 
 /*
@@ -264,7 +270,7 @@ MARK: Projects
 
 .project {
 	flex: 1;
-	min-width: 300px;
+	min-width: 250px;
 	border: 2px solid #ccc;
 	background-color: #eee;
 	border-radius: 10px;
@@ -285,8 +291,9 @@ MARK: Projects
 	border-color: #aaa;
 }
 
-.project img {
+.project>img {
 	width: 100%;
+	aspect-ratio: 2;
 	vertical-align: center;
 }
 
@@ -548,12 +555,35 @@ span.navbar-item {
 /*
 MARK: Mobile Support
 */
+@media screen and (min-width: 1000px) {
+	.project {
+		min-width: 300px;
+	}
+}
+
 @media screen and (max-width: 599px) {
 	.displaycontainer {
-		width: 90%;
+		max-width: calc(100% - 60px);
 	}
+	.rsslink {
+		display: none;
+	}
+	.mobile-rss {
+		display: block;
+	}
+	.rss, .mobile-rss {
+		top: unset;
+		bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 399px) {
 	.project {
-		min-width: 250px;
+		min-width: calc(100% - 20px);
+	}
+	.rss, .mobile-rss {
+		width: 20px;
+		height: 20px;
 	}
 }
 

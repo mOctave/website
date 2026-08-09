@@ -28,11 +28,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
 	<link rel="stylesheet" href="../resources/style.css"/>
-	<link rel="icon" href="../resources/icon.png"/>
+	<link rel="icon" href="../resources/icon-small.png"/>
+	<link rel="apple-touch-icon-precomposed" href="../resources/icon-touch.png"/>
 </head>
 <body>
 	<div class="displaycontainer">
-		<a class="rss" href="../rss.xml"><img src="../resources/rss.svg"></a>
+		<a class="rss" href="../rss.xml"><img src="../resources/rss.svg" alt=""></a>
 		<div class="border-a"></div>
 		<div class="border-b"></div>
 		<div class="maincontainer">
@@ -56,7 +57,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 				<p>Shortly after publishing <a href="./18-bitwise.html">Bitwise</a>, I started working on another project that I've been meaning to get around to for a little while: a competitve trivia game that lets players challenge each other to questions of their own choosing that I dubbed Trivial. For the last couple of weeks, Trivial has been up as a public beta, and you can play it now at <a href="https://trivial.moctave.net">trivial.moctave.net</a>.</p>
 				<p>The project's still a little rough around the edges. There's content missing, there are some very simple exploits you can use to manipulate your duels rating, and beta testing revealed inexplicable intermittent lag that seems to be an issue with the server in my basement rather than the code itself. However, it is available, it is playable, and it is probably the most complex web development project I've attempted yet.</p>
 				<figure class="centered-fig">
-					<img src="../resources/img/blog-19-andorra.png" alt="A screenshot of the Trivial Play page... logged into the superuser account, naturally."/>
+					<img src="../resources/img/blog/19-andorra.png" alt="A screenshot of the Trivial Play page... logged into the superuser account, naturally."/>
 					<figcaption>What, you're going to read this caption instead of playing the game? Smh.</figcaption>
 				</figure>
 				<p>The basic framework of the project isn't too different from Flagrank: there's a NodeJS Express backend (albeit with a much better structure than Flagrank and separate routes, controllers, and services), an EJS frontend that is hacked together but generally functions, and a whole bunch of SVGs tossed in for good measure. However, the first big change is that this time around I actually used a proper database.</p>

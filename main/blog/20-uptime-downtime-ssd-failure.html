@@ -28,11 +28,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
 	<link rel="stylesheet" href="../resources/style.css"/>
-	<link rel="icon" href="../resources/icon.png"/>
+	<link rel="icon" href="../resources/icon-small.png"/>
+	<link rel="apple-touch-icon-precomposed" href="../resources/icon-touch.png"/>
 </head>
 <body>
 	<div class="displaycontainer">
-		<a class="rss" href="../rss.xml"><img src="../resources/rss.svg"></a>
+		<a class="rss" href="../rss.xml"><img src="../resources/rss.svg" alt=""></a>
 		<div class="border-a"></div>
 		<div class="border-b"></div>
 		<div class="maincontainer">
@@ -56,7 +57,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 				<p>You may have noticed (or not) that this website was down recently. Apparently the server suffered a catastrophic SSD failure sometime on July 1. The good news: there was already a second SSD ready to be put to use. The bad news: the server had previously decided not to back up for six months straight.</p>
 				<p>Thankfully, because I keep the majority of my website under source control beyond a couple of config files and my new Trivial database, it was relatively easy to just use <span class="code">git clone</span> and/or <span class="code">git pull</span> to get most of the important data back, and I was able to manually restore the config files to proper working order. In the end, the only notable casualty is the Trivial database, which needed to be cleaned up anyways but probably didn't deserve complete annihilation? Oh well.</p>
 				<figure class="centered-fig">
-					<img src="../resources/img/blog-20-uptime-robot.png" alt="A screenshot of my UptimeRobot monitors page."/>
+					<img src="../resources/img/blog/20-uptime-robot.png" alt="A screenshot of my UptimeRobot monitors page."/>
 					<figcaption>I didn't know it was possible for a website to be this well laid-out and this ugly at the same time... but it works.</figcaption>
 				</figure>
 				<p>So, how am I going to prevent my website going down for a week in the future? I'm glad you asked.</p>

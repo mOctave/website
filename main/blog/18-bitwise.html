@@ -28,11 +28,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
 	<link rel="stylesheet" href="../resources/style.css"/>
-	<link rel="icon" href="../resources/icon.png"/>
+	<link rel="icon" href="../resources/icon-small.png"/>
+	<link rel="apple-touch-icon-precomposed" href="../resources/icon-touch.png"/>
 </head>
 <body>
 	<div class="displaycontainer">
-		<a class="rss" href="../rss.xml"><img src="../resources/rss.svg"></a>
+		<a class="rss" href="../rss.xml"><img src="../resources/rss.svg" alt=""></a>
 		<div class="border-a"></div>
 		<div class="border-b"></div>
 		<div class="maincontainer">
@@ -56,7 +57,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 				<p>For the last few months, I've been privately working on a project that I've meant to get around to for a couple of years, and I'm now finally at the point where it's available in a public beta!</p>
 				<p>Bitwise is a RISC simulator: it lets you write code in a relatively easy-to-use assembly language, compile that code, and step through the execution or get explanations of previous steps. It's designed as an educational tool, aiming to provide a stepping stone between simple graphical demos and more complicated technical systems and help ease you into becoming comfortable with how a computer works on a lower level.</p>
 				<figure class="centered-fig">
-					<img src="../resources/img/blog-bitwise.png" alt="A screenshot of Bitwise with its instruction picker open."/>
+					<img src="../resources/img/blog/bitwise.png" alt="A screenshot of Bitwise with its instruction picker open."/>
 					<figcaption>By having you enter your instructions with buttons and validating your input as you make it, Bitwise minimizes compile-time issues. Or, if you find it too slow this way, you can always import your instructions from a text file.</figcaption>
 				</figure>
 				<p>This project was also the first time I've built a whole codebase with test-driven development from the get-go. It was definitely slower this way, but it's also a lot more robust. I don't think I've encountered a bug in Bitwise in more than a month now. Bitwise has also been a great chance for me to work on my CI/CD automation skills, using Maven to its full potential along with jpackage to provide easily-installable apps for download on every commit... although without proper signing many operating systems seem to take issue with them right now.</p>

@@ -19,7 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 const projects = [
 	{
 		"name": "Flagrank",
-		"thumbnail": "project/flagrank.png",
+		"thumbnail": "project/flagrank.webp",
 		"description": "Have you ever felt personally offended by a bad flag design? Sat down and spent hours of your life trying to build a tier flaglist? Watched that one CGP Grey video on loop? Well, here's the site for you. Pit flags against each other in an infinite series of head-to-head matches and let your (clearly superior) opinions on vexillology influence the flags' online Elo ratings in real time.",
 		"link": "https://flagrank.moctave.net",
 		"stack": [
@@ -34,7 +34,7 @@ const projects = [
 	},
 	{
 		"name": "Bitwise",
-		"thumbnail": "project/bitwise.png",
+		"thumbnail": "project/bitwise.webp",
 		"description": "Bitwise is a novel RISC simulator designed to provide a stepping stone between simple graphical demos and more complicated technical systems. It provides both a GUI and CLI to allow the user to write, execute, and understand the instructions a simple computer could use to process data.",
 		"link": "https://github.com/mOctave/bitwise",
 		"stack": [
@@ -48,7 +48,7 @@ const projects = [
 
 	{
 		"name": "Weftspace",
-		"thumbnail": "project/weftspace.png",
+		"thumbnail": "project/weftspace.webp",
 		"description": "Weftspace is my library designed to offer the maximum possible level of support for Endless Sky datafile syntax. I maintain versions of the library for both Java and Python and recently transitioned to a test-driven development approach.",
 		"link": "https://github.com/mOctave/weftspace",
 		"stack": [
@@ -65,7 +65,7 @@ const projects = [
 	},
 	{
 		"name": "Trivial",
-		"thumbnail": "project/trivial.png",
+		"thumbnail": "project/trivial.webp",
 		"description": "A recent project of mine, using NodeJS, Express, and Mongoose to create a competitive multiplayer trivia quiz. Now you, too, can compete for the title of ultimate party bore.",
 		"link": "https://trivial.moctave.net",
 		"stack": [
@@ -80,7 +80,7 @@ const projects = [
 	},
 	{
 		"name": "Blended Ships",
-		"thumbnail": "project/blended-ships.png",
+		"thumbnail": "project/blended-ships.webp",
 		"description": "Blended Ships is by far my largest and most polished ES plugin, attempting to introduce some element of realism (sorry Azure) into ship splicing.",
 		"link": "https://github.com/mOctave/blended-ships",
 		"stack": [
@@ -91,7 +91,7 @@ const projects = [
 	},
 	{
 		"name": "270-50",
-		"thumbnail": "project/270-50.png",
+		"thumbnail": "project/270-50.webp",
 		"description": "A fun little CLI game where you can compete against a bot or a fellow human being to bribe large quantities of people into voting for you.",
 		"link": "./projects/270-50.html",
 		"stack": [
@@ -100,7 +100,7 @@ const projects = [
 	},
 	{
 		"name": "Endless Sky",
-		"thumbnail": "project/es.png",
+		"thumbnail": "project/es.webp",
 		"description": "Endless Sky is a sandbox-style space exploration game similar to Elite, Escape Velocity, or Star Control. I do content review for the game when I have time, and also have a number of plugins and development tools for it, many of which are on this page.",
 		"link": "https://github.com/endless-sky/endless-sky",
 		"stack": [
@@ -111,7 +111,7 @@ const projects = [
 	},
 	{
 		"name": "Eratosthenes Benchmark",
-		"thumbnail": "project/eratosthenes.png",
+		"thumbnail": "project/eratosthenes.webp",
 		"description": "An old project of mine where I benchmarked different programming languages and tried to learn a bit more about them in the process. As far as I'm aware, all the code there still should work, and you're welcome to PR another language. However, I'm not actively working on this anymore.",
 		"link": "https://github.com/mOctave/eratosthenes-benchmark",
 		"stack": [
@@ -126,7 +126,7 @@ const projects = [
 	},
 	{
 		"name": "Endless Sky Map Generator",
-		"thumbnail": "project/mapgen.png",
+		"thumbnail": "project/mapgen.webp",
 		"description": "At some point in 2023 I decided that Endless Sky's map needed an update, and so I pieced together a new map out of a whole bunch of screenshots. Fast forward a year and I got fed up with spending so much time doing such repetitive work, and so I made a tool to generate more professional-looking betterer maps automatically.",
 		"link": "https://github.com/mOctave/mapgen",
 		"stack": [
@@ -137,7 +137,7 @@ const projects = [
 	},
 	{
 		"name": "Grapher",
-		"thumbnail": "project/grapher.png",
+		"thumbnail": "project/grapher.webp",
 		"description": "An exercise in systematic design I put myself through between May 2024 and March 2025. It is a functional graphing calculator, capable of plotting two different kinds of trendline and custom error bars, and works with a custom binary file format. Considered finished, no longer maintained.",
 		"link": "https://github.com/mOctave/grapher",
 		"stack": [
@@ -147,7 +147,7 @@ const projects = [
 	},
 	{
 		"name": "Phrasemaker",
-		"thumbnail": "project/phrasemaker.png",
+		"thumbnail": "project/phrasemaker.webp",
 		"description": "An old NodeJS module I threw together that procedurally generates random phrases, with some basic support for verb conjugation and articles.",
 		"link": "https://github.com/mOctave/phrasemaker",
 		"stack": [
@@ -157,7 +157,7 @@ const projects = [
 	},
 	{
 		"name": "ES Community Directory",
-		"thumbnail": "project/directory.png",
+		"thumbnail": "project/directory.webp",
 		"description": "My attempt to provide a community directory of everyone involved in Endless Sky. Now (vaguely) maintained with the help of a couple other members of the community.",
 		"link": "https://moctave.github.io/es-community-directory/",
 		"stack": [
@@ -166,7 +166,7 @@ const projects = [
 	},
 	{
 		"name": "This website!",
-		"thumbnail": "project/website.png",
+		"thumbnail": "project/website.webp",
 		"description": "Yes, this website is also one of my projects! It is built directly from raw HTML and CSS (plus a little bit of Javascript kicking around), and hosted on a private server. Click here to view the code that makes it work.",
 		"link": "https://github.com/mOctave/website",
 		"stack": [
@@ -316,7 +316,6 @@ function populateContainers(limit, pathToImages) {
 				return;
 
 			if (match(project, activeFilters)) {
-				console.log("Adding project");
 				projectsSoFar++;
 
 				let projectDiv = document.createElement("a");
@@ -368,7 +367,6 @@ function populateContainers(limit, pathToImages) {
 
 // Determines whether the given project matches the filter
 function match(project) {
-	console.log("matching " + project + " to " + activeFilters)
 	if (activeFilters.length == 0) {
 		return true;
 	}
