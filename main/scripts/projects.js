@@ -391,6 +391,8 @@ function makeTechBadge(tech, parent) {
 
 	let techIcon = document.createElement("img");
 	techIcon.setAttribute("src", imgPath + techInfo.icon);
+	// Images don't need alt text since they're labelled!
+	techIcon.setAttribute("alt", "");
 	techBadge.appendChild(techIcon);
 
 	let techName = document.createElement("span");
