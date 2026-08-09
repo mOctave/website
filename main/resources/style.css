@@ -156,7 +156,7 @@ MARK: Blog Links
 
 .latestblog {
 	flex: 3 3 200px;
-	color: #eee;
+	color: #fff;
 }
 
 .allblogs {
@@ -257,12 +257,12 @@ MARK: Blog Links
 
 .blogtype {
 	font-style: italic;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.8);
 }
 
 .blogdate {
 	font-style: italic;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.8);
 }
 
 
