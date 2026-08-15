@@ -93,7 +93,7 @@ const projects = [
 		"name": "270-50",
 		"thumbnail": "project/270-50.webp",
 		"description": "A fun little CLI game where you can compete against a bot or a fellow human being to bribe large quantities of people into voting for you.",
-		"link": "./projects/270-50.html",
+		"link": "/projects/270-50.html",
 		"stack": [
 			"lang:java",
 		]
